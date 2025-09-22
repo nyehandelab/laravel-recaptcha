@@ -1,15 +1,6 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaServiceProvider.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
-
-namespace Biscolab\ReCaptcha;
+namespace Nyehandel\ReCaptcha;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
@@ -17,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class ReCaptchaServiceProvider
- * @package Biscolab\ReCaptcha
+ * @package Nyehandel\ReCaptcha
  */
 class ReCaptchaServiceProvider extends ServiceProvider
 {
@@ -94,8 +85,8 @@ class ReCaptchaServiceProvider extends ServiceProvider
     {
 
         Route::get(
-            config('recaptcha.default_validation_route', 'biscolab-recaptcha/validate'),
-            ['uses' => 'Biscolab\ReCaptcha\Controllers\ReCaptchaController@validateV3']
+            config('recaptcha.default_validation_route', 'nyehandel-recaptcha/validate'),
+            ['uses' => 'Nyehandel\ReCaptcha\Controllers\ReCaptchaController@validateV3']
         )->middleware('web');
 
         return $this;

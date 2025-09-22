@@ -1,21 +1,12 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaBuilderV3.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 22/1/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
-
-namespace Biscolab\ReCaptcha;
+namespace Nyehandel\ReCaptcha;
 
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderV3
- * @package Biscolab\ReCaptcha
+ * @package Nyehandel\ReCaptcha
  */
 class ReCaptchaBuilderV3 extends ReCaptchaBuilder
 {
@@ -44,7 +35,7 @@ class ReCaptchaBuilderV3 extends ReCaptchaBuilder
     {
         return url(config(
             'recaptcha.default_validation_route',
-            'biscolab-recaptcha/validate'
+            'nyehandel-recaptcha/validate'
         ));
     }
 

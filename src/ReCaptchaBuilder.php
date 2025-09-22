@@ -1,22 +1,13 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaBuilder.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
-
-namespace Biscolab\ReCaptcha;
+namespace Nyehandel\ReCaptcha;
 
 use Illuminate\Support\Arr;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 /**
  * Class ReCaptchaBuilder
- * @package Biscolab\ReCaptcha
+ * @package Nyehandel\ReCaptcha
  */
 class ReCaptchaBuilder
 {
@@ -34,7 +25,7 @@ class ReCaptchaBuilder
     /**
      * @var string
      */
-    const DEFAULT_ONLOAD_JS_FUNCTION = 'biscolabOnloadCallback';
+    const DEFAULT_ONLOAD_JS_FUNCTION = 'nyehandelOnloadCallback';
 
     /**
      * @var string

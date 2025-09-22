@@ -1,24 +1,15 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaV3Test.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 22/1/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\Controllers\ReCaptchaController;
-use Biscolab\ReCaptcha\Facades\ReCaptcha;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV3;
+use Nyehandel\ReCaptcha\Controllers\ReCaptchaController;
+use Nyehandel\ReCaptcha\Facades\ReCaptcha;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV3;
 use Illuminate\Support\Facades\App;
 
 /**
  * Class ReCaptchaV3Test
- * @package Biscolab\ReCaptcha\Tests
+ * @package Nyehandel\ReCaptcha\Tests
  */
 class ReCaptchaV3Test extends TestCase
 {

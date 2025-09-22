@@ -1,18 +1,9 @@
 <?php
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaLangTest.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 7/8/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\Facades\ReCaptcha;
-use Biscolab\ReCaptcha\ReCaptchaBuilderInvisible;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV2;
+use Nyehandel\ReCaptcha\Facades\ReCaptcha;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderInvisible;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV2;
 
 class ReCaptchaLangTest extends TestCase
 {

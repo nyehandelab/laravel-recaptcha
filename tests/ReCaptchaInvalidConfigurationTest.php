@@ -1,21 +1,12 @@
 <?php
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaInvalidConfigurationTest.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 4/9/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\Exceptions\InvalidConfigurationException;
-use Biscolab\ReCaptcha\ReCaptchaBuilder;
+use Nyehandel\ReCaptcha\Exceptions\InvalidConfigurationException;
+use Nyehandel\ReCaptcha\ReCaptchaBuilder;
 
 /**
  * Class ReCaptchaInvalidConfigurationTest
- * @package Biscolab\ReCaptcha\Tests
+ * @package Nyehandel\ReCaptcha\Tests
  */
 class ReCaptchaInvalidConfigurationTest extends TestCase
 {

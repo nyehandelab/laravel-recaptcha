@@ -1,19 +1,10 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaCustomApiDomainTest.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 13/9/2020
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\ReCaptchaBuilderInvisible;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV2;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV3;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderInvisible;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV2;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV3;
 
 class ReCaptchaCustomApiDomainTest extends TestCase
 {

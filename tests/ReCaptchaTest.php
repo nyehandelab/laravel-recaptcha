@@ -1,25 +1,16 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaTest.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\Facades\ReCaptcha;
-use Biscolab\ReCaptcha\ReCaptchaBuilder;
-use Biscolab\ReCaptcha\ReCaptchaBuilderInvisible;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV2;
-use Biscolab\ReCaptcha\ReCaptchaBuilderV3;
+use Nyehandel\ReCaptcha\Facades\ReCaptcha;
+use Nyehandel\ReCaptcha\ReCaptchaBuilder;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderInvisible;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV2;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV3;
 
 /**
  * Class ReCaptchaTest
- * @package Biscolab\ReCaptcha\Tests
+ * @package Nyehandel\ReCaptcha\Tests
  */
 class ReCaptchaTest extends TestCase
 {
@@ -58,7 +49,7 @@ class ReCaptchaTest extends TestCase
 		$recaptcha = $this->recaptcha_invisible;
 		$html_button = $recaptcha->htmlFormButton();
 		$this->assertEquals(
-			'<button class="g-recaptcha" data-callback="biscolabLaravelReCaptcha" data-sitekey="api_site_key">Submit</button>',
+			'<button class="g-recaptcha" data-callback="nyehandelLaravelReCaptcha" data-sitekey="api_site_key">Submit</button>',
 			$html_button
 		);
 	}
@@ -72,7 +63,7 @@ class ReCaptchaTest extends TestCase
 		$recaptcha = $this->recaptcha_invisible;
 		$html_button = $recaptcha->htmlFormButton('Custom Text');
 		$this->assertEquals(
-			'<button class="g-recaptcha" data-callback="biscolabLaravelReCaptcha" data-sitekey="api_site_key">Custom Text</button>',
+			'<button class="g-recaptcha" data-callback="nyehandelLaravelReCaptcha" data-sitekey="api_site_key">Custom Text</button>',
 			$html_button
 		);
 	}

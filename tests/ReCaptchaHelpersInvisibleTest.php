@@ -1,17 +1,8 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaHelpersInvisibleTest.phpp
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 8/8/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\Facades\ReCaptcha;
+use Nyehandel\ReCaptcha\Facades\ReCaptcha;
 
 class ReCaptchaHelpersInvisibleTest extends TestCase
 {
@@ -77,7 +68,7 @@ class ReCaptchaHelpersInvisibleTest extends TestCase
 
     public function testGetFormIdReturnDefaultFormIdValue()
     {
-        $this->assertEquals('biscolab-recaptcha-invisible-form', getFormId());
+        $this->assertEquals('nyehandel-recaptcha-invisible-form', getFormId());
     }
 
     /**

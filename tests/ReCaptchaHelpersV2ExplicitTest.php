@@ -1,17 +1,8 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaHelpersV2ExplicitTest.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 2/9/2019
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha\Tests;
 
-namespace Biscolab\ReCaptcha\Tests;
-
-use Biscolab\ReCaptcha\ReCaptchaBuilderV2;
+use Nyehandel\ReCaptcha\ReCaptchaBuilderV2;
 
 class ReCaptchaHelpersV2ExplicitTest extends TestCase
 {
@@ -27,7 +18,7 @@ class ReCaptchaHelpersV2ExplicitTest extends TestCase
         $callback = $recaptcha->getOnLoadCallback();
 
         $this->assertEquals(
-            '<script>var biscolabOnloadCallback = function() {grecaptcha.render(\'recaptcha-element\', {"sitekey":"api_site_key","theme":"dark","size":"compact","tabindex":"2","callback":"callbackFunction","expired-callback":"expiredCallbackFunction","error-callback":"errorCallbackFunction"});};</script>',
+            '<script>var nyehandelOnloadCallback = function() {grecaptcha.render(\'recaptcha-element\', {"sitekey":"api_site_key","theme":"dark","size":"compact","tabindex":"2","callback":"callbackFunction","expired-callback":"expiredCallbackFunction","error-callback":"errorCallbackFunction"});};</script>',
             $callback
         );
     }
@@ -41,7 +32,7 @@ class ReCaptchaHelpersV2ExplicitTest extends TestCase
         $html = htmlScriptTagJsApi();
 
         $this->assertEquals(
-            '<script>var biscolabOnloadCallback = function() {grecaptcha.render(\'recaptcha-element\', {"sitekey":"api_site_key","theme":"dark","size":"compact","tabindex":"2","callback":"callbackFunction","expired-callback":"expiredCallbackFunction","error-callback":"errorCallbackFunction"});};</script><script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=biscolabOnloadCallback" async defer></script>',
+            '<script>var nyehandelOnloadCallback = function() {grecaptcha.render(\'recaptcha-element\', {"sitekey":"api_site_key","theme":"dark","size":"compact","tabindex":"2","callback":"callbackFunction","expired-callback":"expiredCallbackFunction","error-callback":"errorCallbackFunction"});};</script><script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=nyehandelOnloadCallback" async defer></script>',
             $html
         );
     }

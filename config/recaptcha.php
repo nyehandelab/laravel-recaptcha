@@ -1,15 +1,6 @@
 <?php
 
 /**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - recaptcha.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
-
-/**
  * To configure correctly please visit https://developers.google.com/recaptcha/docs/start
  */
 return [
@@ -62,7 +53,7 @@ return [
      * @since v3.2.0
      *
      */
-    'default_validation_route'     => 'biscolab-recaptcha/validate',
+    'default_validation_route'     => 'nyehandel-recaptcha/validate',
 
     /**
      *
@@ -88,7 +79,7 @@ return [
      * @since v4.0.0
      *
      */
-    'default_form_id'              => 'biscolab-recaptcha-invisible-form',
+    'default_form_id'              => 'nyehandel-recaptcha-invisible-form',
 
     /**
      *
@@ -159,20 +150,20 @@ return [
         /**
          * The name of your callback function, executed when the user submits a successful response.
          * The g-recaptcha-response token is passed to your callback.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "nyehandelOnloadCallback"
          */
         'callback'         => null,
 
         /**
          * The name of your callback function, executed when the reCAPTCHA response expires and the user needs to re-verify.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "nyehandelOnloadCallback"
          */
         'expired-callback' => null,
 
         /**
          * The name of your callback function, executed when reCAPTCHA encounters an error (usually network connectivity) and cannot continue until connectivity is restored.
          * If you specify a function here, you are responsible for informing the user that they should retry.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "nyehandelOnloadCallback"
          */
         'error-callback'   => null,
     ]

@@ -1,21 +1,12 @@
 <?php
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaBuilderInvisible.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha;
 
-namespace Biscolab\ReCaptcha;
-
-use Biscolab\ReCaptcha\Exceptions\InvalidConfigurationException;
+use Nyehandel\ReCaptcha\Exceptions\InvalidConfigurationException;
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderInvisible
- * @package Biscolab\ReCaptcha
+ * @package Nyehandel\ReCaptcha
  */
 class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
 {
@@ -52,7 +43,7 @@ class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
         $tag_properties = '';
 
         $properties = array_merge([
-            'data-callback' => 'biscolabLaravelReCaptcha',
+            'data-callback' => 'nyehandelLaravelReCaptcha',
         ], $properties, 
         [
             'data-sitekey'  => $this->api_site_key
@@ -101,7 +92,7 @@ class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
             $this->form_id = $form_id;
         }
         $html .= '<script>
-		       function biscolabLaravelReCaptcha(token) {
+		       function nyehandelLaravelReCaptcha(token) {
 		         document.getElementById("' . $form_id . '").submit();
 		       }
 		     </script>';

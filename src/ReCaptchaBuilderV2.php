@@ -1,22 +1,13 @@
 <?php
 
-/**
- * Copyright (c) 2017 - present
- * LaravelGoogleRecaptcha - ReCaptchaBuilderV2.php
- * author: Roberto Belotti - roby.belotti@gmail.com
- * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 12/9/2018
- * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
- */
+namespace Nyehandel\ReCaptcha;
 
-namespace Biscolab\ReCaptcha;
-
-use Biscolab\ReCaptcha\Exceptions\InvalidConfigurationException;
+use Nyehandel\ReCaptcha\Exceptions\InvalidConfigurationException;
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderV2
- * @package Biscolab\ReCaptcha
+ * @package Nyehandel\ReCaptcha
  */
 class ReCaptchaBuilderV2 extends ReCaptchaBuilder
 {
@@ -102,7 +93,7 @@ class ReCaptchaBuilderV2 extends ReCaptchaBuilder
 
         $attributes = $this->getTagAttributes();
 
-        return "<script>var biscolabOnloadCallback = function() {grecaptcha.render('recaptcha-element', " . json_encode($attributes) . ");};</script>";
+        return "<script>var nyehandelOnloadCallback = function() {grecaptcha.render('recaptcha-element', " . json_encode($attributes) . ");};</script>";
     }
 
     /**
