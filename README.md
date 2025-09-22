@@ -31,7 +31,7 @@ Follow the instructions and at the end of the process you will find **Site key**
 
 | Package version | reCaptcha version             | PHP version           | Laravel version         | 
 | --------------- | ----------------------------- | --------------------- | ----------------------- | 
-| 6.1             | v3, v2 Invisible, v2 Checkbox | 7.3 or greater        | 7, 8, 9, 10, 11         | 
+| 6.1             | v3, v2 Invisible, v2 Checkbox | 7.3 or greater        | 7, 8, 9, 10, 11, 12     | 
 | 6.0             | v3, v2 Invisible, v2 Checkbox | 7.3 or greater        | 7, 8, 9, 10             | 
 | 5.x             | v3, v2 Invisible, v2 Checkbox | 7.3 or greater        | 7, 8, 9                 | 
 | 4.2.x to 4.4.x  | v3, v2 Invisible, v2 Checkbox | 7.1 or greater        | 5.5 or greater, 6, 7, 8 | 
